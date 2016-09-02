@@ -11,6 +11,7 @@ import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.TextView;
 
 import com.tetris.djj.machine_m.api.action.AppAction;
 import com.tetris.djj.machine_m.api.http.HttpEngine;
@@ -27,6 +28,7 @@ public abstract class BaseActivity extends FragmentActivity {
     protected ProgressDialog pd;
     protected int color = R.color.login_stop_color;
     protected AppAction appAction;
+    private TextView egg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
