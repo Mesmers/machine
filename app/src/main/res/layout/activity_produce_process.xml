@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.tetris.djj.machine_m"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.tetris.djj.machine_m.widget.TitleText
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        app:show_left_icon="false"
+        app:title_text="进度查询" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp">
+
+            <com.tetris.djj.machine_m.api.kankan.wheel.widget.WheelView
+                android:id="@+id/wheel_produce_process_date"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+
+            <com.tetris.djj.machine_m.api.kankan.wheel.widget.WheelView
+                android:id="@+id/wheel_produce_process_setting"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+
+            <com.tetris.djj.machine_m.api.kankan.wheel.widget.WheelView
+                android:id="@+id/wheel_produce_process_content"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/i_btn_produce_process_search"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:src="@drawable/selector_project_search" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MainCircleView">
+        <attr name="src_pic" format="reference"/>
+        <attr name="text_below" format="string"/>
+        <attr name="target" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="MainItemText">
+        <attr name="left_ic" format="reference"/>
+        <attr name="my_text" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="TitleText">
+        <attr name="title_text" format="string"/>
+        <attr name="show_left_icon" format="boolean"/>
+        <attr name="title_target" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="RectView">
+        <attr name="rect_color" format="color"/>
+    </declare-styleable>
+</resources>

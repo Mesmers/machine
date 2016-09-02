@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center" />
+
+    <com.tetris.djj.machine_m.api.zxing.view.ViewfinderView
+        android:id="@+id/viewfinder_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="@color/main_top_sys">
+
+        <Button
+            android:id="@+id/btn_quality_open_album"
+            style="@style/quality_back_stracking_top_text"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="相册"
+            />
+
+        <TextView
+            style="@style/main_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="条码/二维码" />
+
+        <ImageButton
+            android:id="@+id/i_btn_quality_back"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:src="@drawable/selector_quality_top_icon"/>
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

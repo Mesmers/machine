@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.tetris.djj.machine_m"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.tetris.djj.machine_m.widget.TitleText
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        app:show_left_icon="true"
+        app:title_target="PowerManagerActivity"
+        app:title_text="车间能耗" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btn_power_manager_search_time_expand"
+                style="@style/order_form_manager_center_text"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/selector_actual_status_back"
+                android:text="当月车间1能耗图" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@color/bg_view" />
+
+
+            <com.tetris.djj.machine_m.widget.MyLineChart
+                android:id="@+id/widget_power_manager_search_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_power_manager_search_every_time_expand"
+                style="@style/order_form_manager_center_text"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/selector_actual_status_back"
+                android:text="车间1每月能耗分布图" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@color/bg_view" />
+
+
+            <com.tetris.djj.machine_m.widget.MyLineChart
+                android:id="@+id/widget_power_manager_search_every_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

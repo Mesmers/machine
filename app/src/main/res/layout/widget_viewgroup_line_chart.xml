@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_widget_power_manager_search"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/quality_build_text"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="总能耗："/>
+            <TextView
+                android:id="@+id/tv_widget_power_manager_search_power_use_sum"
+                style="@style/quality_build_text"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="1120W"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="#00ccff"/>
+            <TextView
+                style="@style/quality_build_text"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="3dp"
+                android:text="KWh"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_widget_line_chart_date"
+                style="@style/quality_build_text"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="当月电费："/>
+            <TextView
+                android:id="@+id/tv_widget_power_manager_search_power_rate_sum"
+                style="@style/quality_build_text"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="1894"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="#00ccff"/>
+            <TextView
+                style="@style/quality_build_text"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="3dp"
+                android:text="元"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/line_chart_widget_actual_monitor_status_machine_speed"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/main_back">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpg_main"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff">
+        <TableRow android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/i_btn_main_textbook"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@mipmap/ic_main_textbook"/>
+            <ImageButton
+                android:id="@+id/i_btn_main_home"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@mipmap/ic_main_home_focus"/>
+            <ImageButton
+                android:id="@+id/i_btn_main_setting"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@mipmap/ic_main_setting"/>
+            <ImageButton
+                android:id="@+id/i_btn_main_user"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@mipmap/ic_main_user" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

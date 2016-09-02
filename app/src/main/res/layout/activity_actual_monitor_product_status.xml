@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.tetris.djj.machine_m"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.tetris.djj.machine_m.widget.TitleText
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        app:show_left_icon="true"
+        app:title_target="actual.ActualMonitorSearchActivity,ActualMonitorActivity"
+        app:title_text="生产状态" />
+
+    <ScrollView
+        android:id="@+id/scroll_actual_monitor_product_status"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_actual_monitor_status_machine_time_expand"
+                style="@style/order_form_manager_center_text"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/selector_actual_status_back"
+                android:text="机台SA运作时间图" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@color/bg_view" />
+
+            <com.tetris.djj.machine_m.widget.actual.ActualMonitorStatusMachine
+                android:id="@+id/widget_actual_monitor_status_machine_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_actual_monitor_status_machine_process_expand"
+                style="@style/order_form_manager_center_text"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/selector_actual_status_back"
+                android:text="机台SA生产进度" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@color/bg_view" />
+
+            <com.tetris.djj.machine_m.widget.actual.ActualMonitorStatusProcess
+                android:id="@+id/widget_actual_monitor_status_machine_process"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_actual_monitor_status_machine_error_expand"
+                style="@style/order_form_manager_center_text"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/selector_actual_status_back"
+                android:text="机台SA异常情况列表" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@color/bg_view" />
+
+            <com.tetris.djj.machine_m.widget.actual.ActualMonitorList
+                android:id="@+id/widget_actual_monitor_status_machine_error_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_actual_monitor_status_machine_dimension_expand"
+                style="@style/order_form_manager_center_text"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/selector_actual_status_back"
+                android:text="工艺尺寸   mm" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@color/bg_view" />
+
+            <com.tetris.djj.machine_m.widget.MyLineChart
+                android:id="@+id/widget_actual_monitor_status_machine_dimension_procedure"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_actual_monitor_status_machine_speed_expand"
+                style="@style/order_form_manager_center_text"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/selector_actual_status_back"
+                android:text="机台SA速度   m/s" />
+
+            <com.tetris.djj.machine_m.widget.MyLineChart
+                android:id="@+id/widget_actual_monitor_status_machine_speed"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

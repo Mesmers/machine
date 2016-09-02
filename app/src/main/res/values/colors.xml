@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- title -->
+    <color name="title_bg_color">#F05133</color>
+    <color name="title_text_color">#FFFFFF</color>
+    <color name="theme_background_color">#A9A9AA</color>
+    <color name="background_color">#FFFFFF</color>
+
+    <!-- 全局 -->
+    <color name="bg_view">#BCBCBC</color>
+    <color name="bg_round">#e4e4e4</color>
+    <color name="bg_default">#F5F5F5</color>
+    <color name="bg_main">#E85458</color>
+    <color name="bg_white">#FFFFFF</color>
+    <color name="bg_white_pressed">#c1c1c1</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="divider_main">#E1E2E6</color>
+    <color name="text_main_white">#FFFFFF</color>
+    <color name="text_main_red">#E85458</color>
+    <color name="text_main">#4B4D54</color>
+    <color name="text_main_white_second">#99FFFFFF</color>
+    <color name="text_main_second">#A5A6A9</color>
+    <color name="main_left_des_text_color">#9D9EA1</color>
+    <color name="stroke_main_gray">#E1E2E6</color>
+    <color name="hint_main">#A5A6A9</color>
+    <color name="bg_btn_white_normal">#FFFFFF</color>
+    <color name="bg_btn_white_pressed">#D9D9D9</color>
+    <color name="bg_dialog_title">#F5F5F5</color>
+    <!-- big-text-view-btn -->
+    <color name="bg_common_big_textview_btn_not_click">#D8D8D8</color>
+    <color name="bg_common_big_textview_btn_normal">#E85458</color>
+    <color name="bg_common_big_textview_btn_pressed">#CCE85458</color>
+
+    <!-- Login -->
+    <color name="login_start_color">#cce89812</color>
+    <color name="login_stop_color">#d9ba49</color>
+    <color name="login_et_bottom_bg_normal">#4bffffff</color>
+    <color name="login_et_bottom_bg_pressed">#ffffffff</color>
+    <color name="login_btn_bg_normal">#ffffff</color>
+    <color name="login_btn_bg_pressed">#13ffffff</color>
+    <color name="login_tv_text_color_normal">#eaa234</color>
+
+    <!-- 首页 -->
+    <color name="main_back">#d0d0d0</color>
+    <color name="main_top_sys">#FF3300</color>
+    <color name="main_top_sys_press">#cb2d00</color>
+    <color name="bg_main_bottom_tab">#161820</color>
+    <color name="text_main_bottom_tab">#4D4F57</color>
+
+    <!-- Main_Home -->
+    <color name="main_home_back_click">#d4d4d4</color>
+
+    <!-- Main_Setting -->
+    <color name="main_setting_logout">#ff0000</color>
+    <color name="main_setting_logout_press">#D50F0B</color>
+
+    <!-- Main_User -->
+    <color name="main_user_middle_back">#FF6600</color>
+
+    <!-- 质量回溯 -->
+    <color name="zxing_rect">#41aaf3</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+    <!-- MyLineArrow -->
+    <color name="arrow_color">#999999</color>
+    
+    <!-- ProcessFlowView -->
+    <color name="procedure_1">#66CC66</color>
+    <color name="procedure_2">#66CCCC</color>
+    <color name="procedure_3">#FF3300</color>
+    
+    <!-- ProcedureFlowView-->
+    <color name="procedure_text_color">#3366CC</color>
+    <color name="procedure_process_text_color">#00CC00</color>
+    <color name="procedure_process_color">#3366CD</color>
+    <color name="procedure_process_start_color">#196619</color>
+    <color name="procedure_process_stop_color">#b5f0a7</color>
+
+    <!-- ProduceProcessSpec-->
+    <color name="produce_process_spec_finish">#FFD184</color>
+    <color name="produce_process_spec_not_finish">#E2AA00</color>
+    <color name="produce_process_spec_tv_back">#E4E4E4</color>
+
+    <!-- CircleView-->
+    <color name="select_color">#5BB63D</color>
+    <color name="not_select_color">#E4E4E4</color>
+
+    
+    <!-- ActualMonitorSearchActivity-->
+    <color name="normal_machine">#66CCCC</color>
+    <color name="halt_machine">#A5A5A5</color>
+    <color name="error_machine">#FF0000</color>
+
+    <!-- ActualMonitorStatusActivity -->
+    <color name="machine_press">#9e9e9e</color>
+    <color name="machine_no_press">#E4E4E4</color>
+    <color name="prepare_machine">#FFE597</color>
+
+    <!-- WidgetLineChart-->
+    <color name="line_chart_line_color">#5585BF</color>
+    <color name="axis_line_color">#D5D5D5</color>
+    
+    <!-- CostManagerActivity-->
+    <color name="button_search_cost_manager">#169BD5</color>
+    <color name="button_search_cost_manager_pressed">#0e678e</color>
+    
+    <!-- MaterialPie-->
+    <color name="glue_stock">#FF9900</color>//胶料
+    <color name="copper">#99CCFF</color>//铜
+    <color name="aluminum">#C0C0C0</color>//铝
+    <color name="tin">#FFFFCC</color>//锡
+    <color name="belting">#CCFFFF</color>//包带
+
+    <color name="glue_stock_one">#00CCFF</color>//胶料1
+    <color name="glue_stock_two">#FFFF99</color>//胶料2
+    <color name="glue_stock_three">#CC99FF</color>//胶料3
+    <color name="glue_stock_four">#CCFFFF</color>//胶料4
+
+    <color name="procedure_one">#9DC3E6</color>
+    <color name="procedure_two">#FFFF99</color>
+    <color name="procedure_three">#A9D18E</color>
+    <color name="procedure_four">#F4B183</color>
+
+    <!-- InventoryActivity-->
+    <color name="inventory_status">#FF372F</color>
+    <color name="inventory_material_name">#1F1799</color>
+    <color name="inventory_manufacture_type">#1F1799</color>
+    <color name="inventory_manufacture_remark">#FF372F</color>
+</resources>

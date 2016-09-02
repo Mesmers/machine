@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.tetris.djj.machine_m"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.tetris.djj.machine_m.widget.TitleText
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        app:show_left_icon="true"
+        app:title_target="ProduceProcessActivity"
+        app:title_text="生产进度" />
+
+    <TextView
+        style="@style/order_form_manager_center_text"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@color/produce_process_spec_tv_back"
+        android:text="规格进度图" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vpg_produce_process_spec_spec"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:id="@+id/ll_produce_process_spec_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="bottom|center_horizontal"
+            android:orientation="horizontal"></LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        style="@style/order_form_manager_center_text"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@color/produce_process_spec_tv_back"
+        android:text="规格X生产进度延迟机台列表" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <TextView
+            style="@style/project_search_table_list_text"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:text="机台" />
+
+        <TextView
+            style="@style/project_search_table_list_text"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:text="实际产量(米)" />
+
+        <TextView
+            style="@style/project_search_table_list_text"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:text="计划产量(米)" />
+
+        <TextView
+            style="@style/project_search_table_list_text"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:text="完成率" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#000000" />
+
+    <ListView
+        android:id="@+id/list_produce_process_spec_spec"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:dividerHeight="0dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
+
+</LinearLayout>

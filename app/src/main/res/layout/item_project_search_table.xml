@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <TextView
+        android:id="@+id/tv_list_project_search_table_date"
+        style="@style/project_search_table_list_text"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="5"
+        android:text="日期"/>
+    <TextView
+        android:id="@+id/tv_list_project_search_table_work_sheet"
+        style="@style/project_search_table_list_text"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:text="工作单"/>
+    <TextView
+        android:id="@+id/tv_list_project_search_table_spec"
+        style="@style/project_search_table_list_text"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:text="规格"/>
+    <TextView
+        android:id="@+id/tv_list_project_search_table_classes"
+        style="@style/project_search_table_list_text"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:text="班次"/>
+    <TextView
+        android:id="@+id/tv_list_project_search_table_operator"
+        style="@style/project_search_table_list_text"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:text="操作员"/>
+    <TextView
+        android:id="@+id/tv_list_project_search_table_task_meter"
+        style="@style/project_search_table_list_text"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:text="任务/m"/>
+
+</LinearLayout>

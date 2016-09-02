@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="45dp">
+    <TextView
+        android:id="@+id/tv_item_actual_monitor_error_point"
+        style="@style/project_search_table_list_text"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:text="异常点"/>
+    <TextView
+        android:id="@+id/tv_item_actual_monitor_error_type"
+        style="@style/project_search_table_list_text"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:text="异常类型"/>
+    <TextView
+        android:id="@+id/tv_item_actual_monitor_error_time"
+        style="@style/project_search_table_list_text"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:text="异常事件"/>
+    <TextView
+        android:id="@+id/tv_item_actual_monitor_halt_time"
+        style="@style/project_search_table_list_text"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:text="停机时间/h"/>
+</LinearLayout>

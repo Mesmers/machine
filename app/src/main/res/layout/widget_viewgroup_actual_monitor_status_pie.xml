@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.tetris.djj.machine_m"
+    android:id="@+id/ll_widget_actual_monitor_status_fold"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:orientation="horizontal">
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pie_chart_widget_actual_monitor_status_machine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/widget_actual_monitor_search_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="    机台状态：" />
+
+                    <TextView
+                        android:id="@+id/tv_widget_actual_monitor_status_pie_machine_status"
+                        style="@style/widget_actual_monitor_search_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="良好" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/widget_actual_monitor_search_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="总开机时间：" />
+
+                    <TextView
+                        android:id="@+id/tv_widget_actual_monitor_status_pie_start_machine_hours_num"
+                        style="@style/widget_actual_monitor_search_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14.0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <com.tetris.djj.machine_m.view.RectView
+                        style="@style/widget_actual_monitor_search_workshop"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:background="@color/prepare_machine" />
+
+                    <TextView
+                        style="@style/widget_actual_monitor_search_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="    准备时间：" />
+
+                    <TextView
+                        android:id="@+id/tv_widget_actual_monitor_status_pie_prepare_time"
+                        style="@style/widget_actual_monitor_search_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <com.tetris.djj.machine_m.view.RectView
+                        style="@style/widget_actual_monitor_search_workshop"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:background="@color/error_machine" />
+
+                    <TextView
+                        style="@style/widget_actual_monitor_search_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="    机故时间：" />
+
+                    <TextView
+                        android:id="@+id/tv_widget_actual_monitor_status_pie_error_time"
+                        style="@style/widget_actual_monitor_search_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <com.tetris.djj.machine_m.view.RectView
+                        style="@style/widget_actual_monitor_search_workshop"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:background="@color/halt_machine" />
+
+                    <TextView
+                        style="@style/widget_actual_monitor_search_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="    停机时间：" />
+
+                    <TextView
+                        android:id="@+id/tv_widget_actual_monitor_status_pie_halt_time"
+                        style="@style/widget_actual_monitor_search_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1.4" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <com.tetris.djj.machine_m.view.RectView
+                        style="@style/widget_actual_monitor_search_workshop"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:background="@color/normal_machine" />
+
+                    <TextView
+                        style="@style/widget_actual_monitor_search_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="    运行时间：" />
+
+                    <TextView
+                        android:id="@+id/tv_widget_actual_monitor_status_pie_work_time"
+                        style="@style/widget_actual_monitor_search_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+</LinearLayout>

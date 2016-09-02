@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.tetris.djj.machine_m"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.tetris.djj.machine_m.widget.TitleText
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        app:show_left_icon="true"
+        app:title_target="CostManagerActivity"
+        app:title_text="材料成本管理" />
+
+    <TextView
+        style="@style/order_form_manager_center_text"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@color/machine_no_press"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:text="当前查询详情" />
+
+    <com.tetris.djj.machine_m.widget.MaterialPie
+        android:id="@+id/widget_cost_manager_material_material_pie"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"/>
+
+    <TextView
+        android:id="@+id/tv_cost_material_manager_material_details"
+        style="@style/order_form_manager_center_text"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@color/machine_no_press"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:text="材料成本详情" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp">
+        <TextView
+            android:id="@+id/tv_cost_material_manager_material"
+            style="@style/project_search_table_list_text"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:text="材料"/>
+        <TextView
+            android:id="@+id/tv_cost_material_manager_dosage"
+            style="@style/project_search_table_list_text"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:text="用量(kg)"/>
+        <TextView
+            android:id="@+id/tv_cost_material_manager_cost_sum"
+            style="@style/project_search_table_list_text"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:text="总价格(元)"/>
+        <TextView
+            android:id="@+id/tv_cost_material_manager_prices_meter"
+            style="@style/project_search_table_list_text"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:text="元/米"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_cost_material_manager_material_cost_details"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:dividerHeight="0dp"/>
+
+</LinearLayout>

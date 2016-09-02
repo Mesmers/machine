@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.tetris.djj.machine_m"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.tetris.djj.machine_m.widget.TitleText
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        app:title_text="库存查询"
+        app:show_left_icon="false" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp">
+
+            <com.tetris.djj.machine_m.api.kankan.wheel.widget.WheelView
+                android:id="@+id/wheel_inventory_management_date"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+
+            <com.tetris.djj.machine_m.api.kankan.wheel.widget.WheelView
+                android:id="@+id/wheel_inventory_management_material"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.5" />
+
+            <com.tetris.djj.machine_m.api.kankan.wheel.widget.WheelView
+                android:id="@+id/wheel_inventory_management_content"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.7" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/i_btn_inventory_management_search"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:src="@drawable/selector_project_search" />
+    </LinearLayout>
+
+</RelativeLayout>

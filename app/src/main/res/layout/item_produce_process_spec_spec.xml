@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+    <TextView
+        android:id="@+id/tv_item_produce_process_spec_spec_machine_name"
+        style="@style/project_search_table_list_text"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.5"
+        android:text="机台"/>
+    <TextView
+        android:id="@+id/tv_item_produce_process_spec_spec_actual_output"
+        style="@style/project_search_table_list_text"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:text="实际产量(米)"/>
+    <TextView
+        android:id="@+id/tv_item_produce_process_spec_spec_plan_output"
+        style="@style/project_search_table_list_text"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:text="计划产量(米)"/>
+    <TextView
+        android:id="@+id/tv_item_produce_process_spec_spec_finish_chance"
+        style="@style/project_search_table_list_text"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:text="完成率"/>
+</LinearLayout>

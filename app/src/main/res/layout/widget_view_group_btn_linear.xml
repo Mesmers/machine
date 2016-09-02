@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_widget_btn_linear_expand"
+        style="@style/order_form_manager_center_text"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/selector_actual_status_back"
+        android:text="机台SA运作时间图" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/bg_view" />
+
+    <com.tetris.djj.machine_m.widget.MyLineChart
+        android:id="@+id/line_chart_widget_btn_linear_expand"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+</LinearLayout>

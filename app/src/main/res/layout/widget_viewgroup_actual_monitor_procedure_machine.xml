@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.tetris.djj.machine_m.view.ProcedureCircleView
+        android:id="@+id/pro_circle_widget_actual_monitor_procedure_machine_machine"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" />
+    <TextView
+        android:id="@+id/tv_widget_actual_monitor_procedure_machine_machine"
+        style="@style/widget_actual_monitor_search_machine"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="机台1"/>
+</LinearLayout>

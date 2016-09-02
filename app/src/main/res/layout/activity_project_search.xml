@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.tetris.djj.machine_m"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4E4E4"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.tetris.djj.machine_m.widget.TitleText
+        android:id="@+id/widget_project_search_title"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        app:show_left_icon="true"
+        app:title_target="ProjectActivity"
+        app:title_text="规格排产" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <com.tetris.djj.machine_m.widget.ProjectSearchText
+            android:id="@+id/widget_project_search_date"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <com.tetris.djj.machine_m.widget.ProjectSearchText
+            android:id="@+id/widget_project_search_time"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <com.tetris.djj.machine_m.widget.ProjectSearchText
+            android:id="@+id/widget_project_search_task_num"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            style="@style/quality_build_text"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:text="主要工艺参数" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <com.tetris.djj.machine_m.widget.ProjectSearchText
+            android:id="@+id/widget_project_search_params_one"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <com.tetris.djj.machine_m.widget.ProjectSearchText
+            android:id="@+id/widget_project_search_params_two"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <com.tetris.djj.machine_m.widget.ProjectSearchText
+            android:id="@+id/widget_project_search_params_three"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/tv_project_search_table_name"
+            style="@style/quality_build_text"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:text="规格1排产表" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <TextView
+            style="@style/project_search_table_list_text"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:text="日期" />
+
+        <TextView
+            style="@style/project_search_table_list_text"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:text="工作单" />
+
+        <TextView
+            style="@style/project_search_table_list_text"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:text="规格" />
+
+        <TextView
+            style="@style/project_search_table_list_text"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:text="班次" />
+
+        <TextView
+            style="@style/project_search_table_list_text"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:text="操作员" />
+
+        <TextView
+            style="@style/project_search_table_list_text"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:text="任务/m" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#000000" />
+
+    <ListView
+        android:id="@+id/list_project_search_table"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:dividerHeight="0dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"></ListView>
+</LinearLayout>

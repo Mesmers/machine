@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="order_array">
+        <item>所有订单</item>
+        <item>订单1</item>
+        <item>订单2</item>
+        <item>订单3</item>
+    </string-array>
+
+    <string-array name="actual_array">
+        <item>车间1</item>
+        <item>车间2</item>
+        <item>车间3</item>
+        <item>车间4</item>
+    </string-array>
+
+    <string-array name="power_time_array">
+        <item>当天</item>
+        <item>当周</item>
+        <item>当月</item>
+    </string-array>
+
+    <string-array name="cost_manager_array">
+        <item>材料</item>
+        <item>能耗</item>
+    </string-array>
+
+    <string-array name="inventory_management_material_array">
+        <item>原材料</item>
+        <item>半成品</item>
+        <item>成品</item>
+    </string-array>
+
+    <string-array name="inventory_management_row_material_content_array">
+        <item>所有材料</item>
+        <item>材料1</item>
+        <item>材料2</item>
+        <item>材料3</item>
+    </string-array>
+
+    <string-array name="inventory_management_semi_manufactures_content_array">
+        <item>所有工序</item>
+        <item>工序1</item>
+        <item>工序2</item>
+    </string-array>
+
+    <string-array name="inventory_management_manufactures_content_array">
+        <item>所有规格</item>
+        <item>规格1</item>
+        <item>规格2</item>
+        <item>规格3</item>
+    </string-array>
+
+    <string-array name="oee_type_array">
+        <item>规格</item>
+        <item>机台</item>
+        <item>人员</item>
+        <item>工序</item>
+    </string-array>
+    
+    <string-array name="oee_spec_array">
+        <item>所有规格</item>
+        <item>规格1</item>
+        <item>规格2</item>
+        <item>规格3</item>
+    </string-array>
+
+    <string-array name="oee_machine_array">
+        <item>所有机台</item>
+        <item>机台1</item>
+        <item>机台2</item>
+        <item>机台3</item>
+    </string-array>
+
+    <string-array name="oee_person_array">
+        <item>张珊</item>
+        <item>赵武</item>
+    </string-array>
+
+    <string-array name="oee_procedure_array">
+        <item>所有工艺</item>
+        <item>工艺1</item>
+        <item>工艺2</item>
+        <item>工艺3</item>
+    </string-array>
+</resources>

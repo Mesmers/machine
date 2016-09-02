@@ -1,0 +1,13 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="main_home_text">16sp</dimen>
+    <dimen name="quality_middle_text">17sp</dimen>
+    <dimen name="my_text_view_text">16sp</dimen>
+    <dimen name="process_flow_view_stroke">1.5sp</dimen>
+    <dimen name="procedure_view_stroke">20sp</dimen>
+    <dimen name="procedure_process_text">30sp</dimen>
+    <dimen name="procedure_process_start_or_stop_text">16sp</dimen>
+    <dimen name="actual_process_text">30sp</dimen>
+</resources>

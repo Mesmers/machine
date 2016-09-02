@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.tetris.djj.machine_m"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="@color/main_top_sys">
+
+        <TextView
+            style="@style/main_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="智能制造综合管理系统" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="1">
+
+        <TableRow
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1">
+            <com.tetris.djj.machine_m.widget.MainHomeOption                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                app:text_below="质量回溯"
+                android:layout_marginRight="1dp"
+                app:src_pic="@mipmap/ic_main_home_quality_backtracking"
+                android:background="@drawable/selector_main_item_back"
+                app:target="QualityBackStrackingActivity"
+                />
+            <com.tetris.djj.machine_m.widget.MainHomeOption                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                app:text_below="排产"
+                android:layout_marginRight="1dp"
+                app:src_pic="@mipmap/ic_main_home_project"
+                app:target="ProjectActivity"
+                android:background="@drawable/selector_main_item_back"/>
+            <com.tetris.djj.machine_m.widget.MainHomeOption                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                app:text_below="订单管理"
+                app:src_pic="@mipmap/ic_main_home_order_form_manager"
+                app:target="OrderFormManagerActivity"
+                android:background="@drawable/selector_main_item_back"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1">
+            <com.tetris.djj.machine_m.widget.MainHomeOption                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                app:text_below="生产进度"
+                android:layout_marginRight="1dp"
+                app:src_pic="@mipmap/ic_main_home_produce_process"
+                app:target="ProduceProcessActivity"
+                android:background="@drawable/selector_main_item_back"
+                />
+            <com.tetris.djj.machine_m.widget.MainHomeOption                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                app:text_below="能耗管理"
+                android:layout_marginRight="1dp"
+                app:src_pic="@mipmap/ic_main_home_power_manager"
+                app:target="PowerManagerActivity"
+                android:background="@drawable/selector_main_item_back"/>
+            <com.tetris.djj.machine_m.widget.MainHomeOption                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                app:text_below="成本管理"
+                app:src_pic="@mipmap/ic_main_home_cost_manager"
+                app:target="CostManagerActivity"
+                android:background="@drawable/selector_main_item_back"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1">
+            <com.tetris.djj.machine_m.widget.MainHomeOption
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                app:text_below="库存管理"
+                android:layout_marginRight="1dp"
+                app:src_pic="@mipmap/ic_main_home_inventory_management"
+                app:target="InventoryManagementActivity"
+                android:background="@drawable/selector_main_item_back"
+                />
+            <com.tetris.djj.machine_m.widget.MainHomeOption
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                app:text_below="OEE分析"
+                android:layout_marginRight="1dp"
+                app:src_pic="@mipmap/ic_main_home_oee"
+                app:target="OEEActivity"
+                android:background="@drawable/selector_main_item_back"/>
+            <com.tetris.djj.machine_m.widget.MainHomeOption
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                app:text_below="实时监测"
+                app:src_pic="@mipmap/ic_main_home_actual_monitor"
+                app:target="ActualMonitorActivity"
+                android:background="@drawable/selector_main_item_back"/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

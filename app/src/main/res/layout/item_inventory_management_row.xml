@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="45dp">
+    <TextView
+        android:id="@+id/tv_item_inventory_management_row_status"
+        style="@style/inventory_row_table_list_text"
+        android:text="状态"/>
+    <TextView
+        android:id="@+id/tv_item_inventory_management_row_material_name"
+        style="@style/inventory_row_table_list_text"
+        android:text="材料名称"/>
+    <TextView
+        android:id="@+id/tv_item_inventory_management_row_surplus"
+        style="@style/inventory_row_table_list_text"
+        android:text="剩余量(kg)"/>
+    <TextView
+        android:id="@+id/tv_item_inventory_management_row_enter_library"
+        style="@style/inventory_row_table_list_text"
+        android:text="入库(kg)"/>
+    <TextView
+        android:id="@+id/tv_item_inventory_management_row_out_library"
+        style="@style/inventory_row_table_list_text"
+        android:text="出库(kg)"/>
+    <TextView
+        android:id="@+id/tv_item_inventory_management_row_operator"
+        style="@style/inventory_row_table_list_text"
+        android:text="经办人"/>
+    <TextView
+        android:id="@+id/tv_item_inventory_management_row_supplier"
+        style="@style/inventory_row_table_list_text"
+        android:text="供应商"/>
+</LinearLayout>

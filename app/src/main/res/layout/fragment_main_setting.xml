@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.tetris.djj.machine_m"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="@color/main_top_sys">
+
+        <TextView
+            style="@style/main_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置" />
+    </RelativeLayout>
+
+    <com.tetris.djj.machine_m.widget.MainItemText
+        android:id="@+id/widget_main_setting_security"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        app:my_text="安全设置"
+        />
+
+    <com.tetris.djj.machine_m.widget.MainItemText
+        android:id="@+id/widget_main_setting_about_us"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        app:my_text="关于我们"
+        />
+    <com.tetris.djj.machine_m.widget.MainItemText
+        android:id="@+id/widget_main_setting_feed_back"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="2dp"
+        app:my_text="意见反馈" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp">
+        <Button
+            android:id="@+id/btn_main_setting_logout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textSize="20sp"
+            android:text="安全退出"
+            android:background="@drawable/selector_main_item_back"
+            android:gravity="center"
+            android:textColor="@drawable/selector_main_setting_logout"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

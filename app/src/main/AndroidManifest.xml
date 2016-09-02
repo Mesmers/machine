@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tetris.djj.machine_m">
+
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <application
+        android:name=".BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.login.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.main.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.login.FindPassWordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.main.home.ActualMonitorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.main.home.CostManagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.main.home.InventoryManagementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.main.home.OEEActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.main.home.QualityBackStrackingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.main.home.ProjectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.main.home.ProduceProcessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.main.home.PowerManagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.main.home.OrderFormManagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.main.home.quality.QualityBuildActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.main.home.project.ProjectSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.main.home.order.OrderFormManagerSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.main.home.produce.ProduceProcessSpec"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.main.home.actual.ActualMonitorSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.main.home.actual.ActualMonitorProductStatusActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.main.home.power.PowerManagerSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.main.home.cost.CostMaterialManagerActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.main.home.cost.CostUseManagerActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.main.home.inventory.RowActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.main.home.inventory.ManufacturesActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.main.home.power.PowerManagerDayActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

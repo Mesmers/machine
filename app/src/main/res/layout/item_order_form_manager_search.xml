@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="30dp">
+    <TextView
+        android:id="@+id/tv_item_order_form_manager_search_procedure"
+        style="@style/order_form_manager_center_text"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:text="工序1："/>
+    <TextView
+        android:id="@+id/tv_item_order_form_manager_search_procedure_process"
+        style="@style/order_form_manager_center_text"
+        android:gravity="center_vertical|left"
+        android:textColor="#3366CC"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:text="100%"/>
+</LinearLayout>
