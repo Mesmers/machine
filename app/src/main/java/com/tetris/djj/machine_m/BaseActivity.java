@@ -29,7 +29,6 @@ public abstract class BaseActivity extends FragmentActivity {
     protected int color = R.color.login_stop_color;
     protected AppAction appAction;
     private TextView egg;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
